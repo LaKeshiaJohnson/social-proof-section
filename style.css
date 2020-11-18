@@ -1,0 +1,41 @@
+body {
+	font-family: 'Spartan', sans-serif;
+	font-size: 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+ }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+#headline {
+	color: hsl(300, 43%, 22%);
+	font-weight: 700;
+	font-size: 40px;
+}
+
+#tagline {
+	color: hsl(303, 10%, 53%);
+}
+
+.stars {
+	color: hsl(300, 43%, 22%);
+	background-color: hsl(300, 24%, 96%);
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.buyerReview {
+	color:hsl(0, 0%, 100%);
+	background-color: hsl(300, 43%, 22%);
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.vb {
+	color: hsl(333, 80%, 67%);
+}
