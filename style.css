@@ -3,13 +3,18 @@ body {
 	font-size: 15px;
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
- }
+.container{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	/*grid-template-columns: 1fr 1fr 1fr;*/
+	grid-template-rows: 1fr 1fr 1fr;
+}
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+.spans {
+	width:400px;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	
 }
 
 #headline {
@@ -20,22 +25,104 @@ body {
 
 #tagline {
 	color: hsl(303, 10%, 53%);
+	
+		
 }
 
-.stars {
+#ratings {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	margin-left: 100px;
+
+}
+
+.rating {
 	color: hsl(300, 43%, 22%);
 	background-color: hsl(300, 24%, 96%);
 	padding: 20px;
 	border-radius: 5px;
+	width: 400px;
+	margin-bottom: 10px;
+}
+
+.rating1{
+	/*grid-column-start: 1;
+	grid-row-start: 2;*/	
+	
+}
+
+.rating2{
+	/*grid-column-start: 2;
+	grid-row-start: 2;*/
+	margin-left: 55px;
+}
+
+.rating3{
+	/*grid-column-start: 3;
+	grid-row-start: 2;*/
+	margin-left: 110px;
+}
+
+#buyerReviews {
+	display: flex;
+	flex-direction: row;
+	grid-column: 1 /span 3;
+	grid-row-start: 2;
+	height: 300px;
+	
 }
 
 .buyerReview {
 	color:hsl(0, 0%, 100%);
 	background-color: hsl(300, 43%, 22%);
-	padding: 20px;
+	padding: 30px;
 	border-radius: 5px;
+	width: 300px;
+	
+}
+
+.buyer {
+	border-radius: 100px;
+	width: 40px;
+	float: left;
+	margin-right: 15px;
 }
 
 .vb {
-	color: hsl(333, 80%, 67%);
+	color: hsl(333, 80%, 67%);	
+
+}
+
+.review1{
+	/*grid-column-start: 1;
+	grid-row-start: 2;*/
+	align-self: flex-start;
+	margin-right: 25px;
+}
+
+.review2{
+	/*grid-column-start: 2;
+	grid-row-start: 2;*/
+	align-self: center;
+	margin-right: 25px;
+}
+
+.review3{
+	/*grid-column-start: 3;
+	grid-row-start: 2;*/
+	align-self: flex-end;
+}
+
+
+.attribution {
+        font-size: 11px;
+        text-align: center;
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-top: 50px;
+      }
+.attribution a {
+        color: hsl(228, 45%, 44%);
 }
